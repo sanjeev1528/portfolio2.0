@@ -1,0 +1,8 @@
+.nav-sk{
+    height: 60px;
+}
+
+
+.screen-sk{
+    height: calc(100vh - 60px);
+}
