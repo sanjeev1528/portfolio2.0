@@ -2,13 +2,10 @@ import React from 'react'
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Link} from 'react-scroll'
 
-
-
-
 function Navbars() {
   return (
-<Navbar fluid rounded className='bg-green-200'>
- <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded  />
+<Navbar fluid rounded className='bg-purple-400 p-4 shadow-md shadow-yellow-300'>
+ <Avatar alt="User settings" img="/green_pho.jpg" rounded  />
 
       <Navbar.Toggle />
    
