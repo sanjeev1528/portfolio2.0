@@ -10,29 +10,42 @@ function Navbars() {
       <Navbar.Toggle />
    
     <Navbar.Collapse>
-      <Navbar.Link href="#home"><Link
+      <Navbar.Link href="#hero">
+      
+        <Link
             to="home-section"
             smooth={true}
             duration={1000}
             offset={-70}
-            className="nav-link"
-          >Home</Link></Navbar.Link>
+            className="nav-link cursor-pointer"
+          >Home</Link>
+         
+          </Navbar.Link>
       <Navbar.Link href="#skills">
       <Link
             to="skills-section"
             smooth={true}
             duration={1000}
-            className="nav-link"
+            className="nav-link cursor-pointer"
             offset={-70}
           >Skills</Link></Navbar.Link>
+    <Navbar.Link href="#projects">
+      <Link
+            to="projects-section"
+            smooth={true}
+            duration={1000}
+            className="nav-link cursor-pointer"
+            offset={-70}
+          >Project</Link></Navbar.Link>
+
       <Navbar.Link href="#contacts">
       <Link
             to="contact-section"
             smooth={true}
             duration={1000}
-            className="nav-link"
+            className="nav-link cursor-pointer"
             offset={-70}
-          >Contacts</Link></Navbar.Link>
+          >Contact</Link></Navbar.Link>
     </Navbar.Collapse>
    
 

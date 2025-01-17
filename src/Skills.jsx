@@ -14,27 +14,27 @@ function Skills() {
 
     return (
         <>
-            <Element className='flex flex-col justify-center items-center' name='skills-section'>
+            <Element className='flex flex-col justify-center items-center'  name='skills-section'>
                 <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-blue-300 to-purple-400">
                     SKILLS
                 </h1>
                 <p className="max-w-4xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-center px-4">
                     Proficient in C programming and database management, I create efficient software solutions while optimizing data storage for dynamic applications. As a full-stack developer, I craft responsive user interfaces using HTML/CSS/JS, seamlessly integrating backend functionalities for comprehensive solutions.
                 </p>
-            </Element>
+           
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 w-11/12 mx-auto mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 w-11/12 mx-auto lg:mt-10 my-6">
                 {/* C Programming Card */}
                 <motion.div 
-                    className="bg-gray-800 border border-gray-300 rounded-lg dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
+                    className="bg-gray-800 border border-gray-300 rounded-lg lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
                     onMouseEnter={() => setChidden(true)} onMouseLeave={() => setChidden(false)}
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: "spring", stiffness: 150 }}
                 >
-                    <img className="rounded-t-lg h-32 sm:h-40 md:h-48 w-full object-cover" src="https://i.pinimg.com/originals/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.png" alt="C Programming" />
+                    <img className="rounded-t-lg h-4/5  w-full object-cover" src="https://i.pinimg.com/originals/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.png" alt="C Programming" />
                     {chidden && (
                         <motion.div 
-                            className={`p-2 absolute top-0 h-full ${popoverColor}`}
+                            className={`p-2 sm:hidden lg:block rounded-t-lg absolute top-0 h-full ${popoverColor}`}
                             initial={{ opacity: 0, scale: 0.95 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.4 }}
@@ -48,15 +48,15 @@ function Skills() {
 
                 {/* HTML/CSS Card */}
                 <motion.div 
-                    className="bg-gray-800 border border-gray-300 rounded-lg dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
+                    className="bg-gray-800 border border-gray-300 rounded-lg  lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
                     onMouseEnter={() => setHtmlhidden(true)} onMouseLeave={() => setHtmlhidden(false)}
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: "spring", stiffness: 150 }}
                 >
-                    <img className="rounded-t-lg h-32 sm:h-40 md:h-48 w-full object-cover" src="https://i.pinimg.com/originals/8b/50/6a/8b506a90c382e610556d51c957d3999f.jpg" alt="HTML/CSS" />
+                    <img className="rounded-t-lg h-4/5  w-full object-cover" src="https://i.pinimg.com/originals/8b/50/6a/8b506a90c382e610556d51c957d3999f.jpg" alt="HTML/CSS" />
                     {htmlhidden && (
                         <motion.div 
-                            className={`p-2 absolute top-0 h-full ${popoverColor}`}
+                            className={`p-2 sm:hidden lg:block rounded-t-lg absolute top-0 h-full ${popoverColor}`}
                             initial={{ opacity: 0, scale: 0.95 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.4 }}
@@ -70,15 +70,15 @@ function Skills() {
 
                 {/* JavaScript Card */}
                 <motion.div 
-                    className="bg-gray-800 border border-gray-300 rounded-lg dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
+                    className="bg-gray-800 border border-gray-300 rounded-lg lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
                     onMouseEnter={() => setJshidden(true)} onMouseLeave={() => setJshidden(false)}
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: "spring", stiffness: 150 }}
                 >
-                    <img className="rounded-t-lg h-32 sm:h-40 md:h-48 w-full object-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="JavaScript" />
+                    <img className="rounded-t-lg h-4/5  w-full object-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="JavaScript" />
                     {jshidden && (
                         <motion.div 
-                            className={`p-2 absolute top-0 h-full ${popoverColor}`}
+                            className={`p-2 sm:hidden lg:block rounded-t-lg absolute top-0 h-full ${popoverColor}`}
                             initial={{ opacity: 0, scale: 0.95 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.4 }}
@@ -92,15 +92,15 @@ function Skills() {
 
                 {/* Node.js Card */}
                 <motion.div 
-                    className="bg-gray-800 border border-gray-300 rounded-lg dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
+                    className="bg-gray-800 border border-gray-300 rounded-lg lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
                     onMouseEnter={() => setNodehidden(true)} onMouseLeave={() => setNodehidden(false)}
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: "spring", stiffness: 150 }}
                 >
-                    <img className="rounded-t-lg h-32 sm:h-40 md:h-48 w-full object-cover" src="https://logowik.com/content/uploads/images/node-js6304.logowik.com.webp" alt="Node.js" />
+                    <img className="rounded-t-lg h-4/5  w-full object-cover" src="https://logowik.com/content/uploads/images/node-js6304.logowik.com.webp" alt="Node.js" />
                     {nodehidden && (
                         <motion.div 
-                            className={`p-2 absolute top-0 h-full ${popoverColor}`}
+                            className={`p-2 sm:hidden lg:block rounded-t-lg absolute top-0 h-full ${popoverColor}`}
                             initial={{ opacity: 0, scale: 0.95 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.4 }}
@@ -114,15 +114,15 @@ function Skills() {
 
                 {/* Database Card */}
                 <motion.div 
-                    className="bg-gray-800 border border-gray-300 rounded-lg dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
+                    className="bg-gray-800 border border-gray-300 rounded-lg  lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
                     onMouseEnter={() => setDbhidden(true)} onMouseLeave={() => setDbhidden(false)}
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: "spring", stiffness: 150 }}
                 >
-                    <img className="rounded-t-lg h-32 sm:h-40 md:h-48 w-full object-cover" src="https://c1.klipartz.com/pngpicture/293/545/sticker-png-sql-server-logo-data-database-microsoft-sql-server-amazon-relational-database-service-line-cylinder-line-art.png" alt="Database" />
+                    <img className="rounded-t-lg h-4/5  w-full object-cover" src="https://c1.klipartz.com/pngpicture/293/545/sticker-png-sql-server-logo-data-database-microsoft-sql-server-amazon-relational-database-service-line-cylinder-line-art.png" alt="Database" />
                     {dbhidden && (
                         <motion.div 
-                            className={`p-2 absolute top-0 h-full ${popoverColor}`}
+                            className={`p-2 sm:hidden rounded-t-lg lg:block absolute top-0 h-full ${popoverColor}`}
                             initial={{ opacity: 0, scale: 0.95 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.4 }}
@@ -134,6 +134,7 @@ function Skills() {
                     )}
                 </motion.div>
             </div>
+            </Element>
         </>
     );
 }

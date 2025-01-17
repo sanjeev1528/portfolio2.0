@@ -46,12 +46,12 @@ function Contact() {
 
     return (
         <>
-            <Element className="bg-gradient-to-r from-green-200 via-blue-300 to-purple-400 dark:bg-gray-900 h-full" name="contact-section">
-                <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-black text-center m-auto pt-4">
+            <Element className="flex flex-col justify-center items-center "style={{minHeight:"90vh"}} name="contact-section">
+                <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-blue-300 to-purple-400">
                     Contact Me
                 </h1>
-                <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-[calc(100vh_-_155px)] lg:py-0">
-                    <div className="w-full bg-opacity-60 bg-gray-50 rounded-lg shadow-lg dark:border md:mt-0 sm:max-w-xl xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-[calc(100vh_-_155px)]   w-3/4 lg:py-0">
+                    <div className="w-full bg-opacity-60 bg-gray-50 rounded-lg shadow-md shadow-blue-300 dark:border md:mt-0 sm:max-w-xl xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8 bg-opacity-70 rounded-md">
                             {/* Contact Form */}
                             <form className="space-y-1 md:space-y-1" onSubmit={submit}>
