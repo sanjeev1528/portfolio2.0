@@ -1,6 +1,8 @@
 import React from 'react'
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Link} from 'react-scroll'
+import {Link as ink } from 'react-router-dom'
+import App from './App';
 
 function Navbars() {
   return (
@@ -29,14 +31,14 @@ function Navbars() {
             className="nav-link cursor-pointer"
             offset={-70}
           >Skills</Link></Navbar.Link>
-    <Navbar.Link href="#projects">
-      <Link
-            to="projects-section"
+    <Navbar.Link href={"/Working"}>
+      <ink
+            to={"/Working"}
             smooth={true}
-            duration={1000}
+             duration={1000}
             className="nav-link cursor-pointer"
-            offset={-70}
-          >Project</Link></Navbar.Link>
+             offset={-70}
+          >Project</ink></Navbar.Link>
 
       <Navbar.Link href="#contacts">
       <Link

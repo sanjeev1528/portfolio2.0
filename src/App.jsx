@@ -4,6 +4,7 @@ import './App.css'
 
 import Home from './Home.jsx'
 import Resume from './Resume.jsx'
+import Projects from './Projects.jsx'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/Working" element={<Projects/>}/>
         
       </Routes>
     </BrowserRouter>
