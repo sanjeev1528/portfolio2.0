@@ -49,9 +49,9 @@ function Home() {
         <Skills/>
    </div>
 
-   <div  id="projects" style={{minHeight:"90vh"}}>
+   {/* <div  id="projects" style={{minHeight:"90vh"}}>
         <Projects/>
-   </div>
+   </div> */}
 
    <div  id="contacts" style={{minHeight:"90vh"}}>
         <Contact/>
