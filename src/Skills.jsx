@@ -23,7 +23,7 @@ function Skills() {
                 </p>
            
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 w-11/12 mx-auto lg:mt-10 my-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 w-11/12 mx-auto lg:mt-10 my-6">
                 {/* C Programming Card */}
                 <motion.div 
                     className="bg-gray-800 border border-gray-300 rounded-lg lg:h-auto w-full lg:w-full dark:bg-gray-900 shadow-2xl shadow-blue-300 relative cursor-pointer" 
