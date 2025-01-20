@@ -1,8 +1,9 @@
 import React,{useEffect, useState} from 'react'
 import { Element } from 'react-scroll';
+import {Link} from 'react-router-dom'
 
 function Projects() {
-   const [hrs, setHrs] = useState(50);
+   const [hrs, setHrs] = useState(48);
   useEffect(()=>{
       const interval = setInterval(
         ()=>{
@@ -22,6 +23,7 @@ function Projects() {
       <header className="text-center text-2xl font-bold text-gray-800">
         Working on this page, kindly visit after {hrs}hrs
       </header>
+      <Link to={"/"} className='text-center border-gray-500  border-2 rounded-md mt-6 px-2 py-1 shadow-sm shadow-gray-200 hover:bg-slate-50 transition-transform hover:translate-y-[-2px] '> Return to portfolio</Link>
     </div>
             // </Element>
    
